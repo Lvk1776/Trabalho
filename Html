@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu Responsivo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+      <h3>Explore The World</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+      <h3>Wild Forest</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');">
+      <h3>Sunny Beach</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');">
+      <h3>City on Nature</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+      <h3>Mountains - Clouds</h3>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">Carros</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Carros</a></li>
+          <li>
+            <a href="#" class="desktop-link">Peças</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Pesquise algo..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
